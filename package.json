@@ -1,6 +1,6 @@
 {
   "name": "@leafycoding/coscli",
-  "version": "0.1.0",
+  "version": "1.1.0",
   "description": "A Node.js and TypeScript CLI for Tencent Cloud COS.",
   "keywords": [
     "cli",
