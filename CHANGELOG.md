@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/yxb123456cy/coscli/compare/v1.1.0...v1.2.0) (2026-07-23)
+
+
+### Features
+
+* **config:** 完善配置初始化与配置文件读取 ([2080f50](https://github.com/yxb123456cy/coscli/commit/2080f50b2edd00f4847fc415b816faf635664872))
+
 # [1.1.0](https://github.com/yxb123456cy/coscli/compare/v1.0.0...v1.1.0) (2026-07-23)
 
 ### Features
