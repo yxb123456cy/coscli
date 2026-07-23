@@ -1,7 +1,7 @@
 import { defineConfig } from "tsup";
 
 export default defineConfig({
-  entry: ["bin/run.ts"],
+  entry: ["bin/coscli.ts"],
   splitting: false,
   sourcemap: false,
   clean: true,

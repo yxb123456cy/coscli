@@ -16,7 +16,7 @@
     "url": "https://github.com/yxb123456cy/coscli.git"
   },
   "bin": {
-    "coscli": "./bin/run"
+    "coscli": "./bin/coscli.js"
   },
   "directories": {
     "lib": "src",
@@ -41,19 +41,30 @@
     "format:fix": "oxfmt .",
     "lint": "oxlint .",
     "lint:fix": "oxfmt . && oxlint .",
-    "start": "ts-node ./bin/run.ts",
-    "start:node": "node ./bin/run",
-    "test": "jest",
-    "test:watch": "jest --watchAll",
+    "start": "ts-node ./bin/coscli.ts",
+    "start:node": "node ./bin/coscli",
+    "test": "vitest run",
+    "test:watch": "vitest",
     "prepare": "husky",
     "release": "semantic-release"
   },
   "dependencies": {
+    "@inquirer/prompts": "^8.5.2",
+    "cli-table3": "^0.6.5",
+    "commander": "^15.0.0",
     "consola": "^3.4.2",
+    "cos-nodejs-sdk-v5": "^3.0.0",
     "dotenv": "^17.4.2",
+    "fast-glob": "^3.3.3",
     "giget": "^3.3.0",
+    "ora": "^9.4.1",
+    "p-limit": "^7.3.1",
+    "p-retry": "^8.0.0",
     "picocolors": "^1.1.1",
-    "yargs": "^18.0.0"
+    "pino": "^10.3.1",
+    "yaml": "^2.9.0",
+    "yargs": "^18.0.0",
+    "zod": "^4.4.3"
   },
   "devDependencies": {
     "@commitlint/cli": "^21.2.1",
@@ -65,6 +76,7 @@
     "@semantic-release/npm": "^13.1.5",
     "@semantic-release/release-notes-generator": "^14.1.1",
     "@tsconfig/node20": "^20.1.9",
+    "@types/commander": "^2.12.5",
     "@types/jest": "^30.0.0",
     "@types/node": "^26.1.1",
     "@types/prompts": "^2.4.9",
@@ -82,11 +94,15 @@
     "ts-jest": "^29.4.11",
     "ts-node": "^10.9.2",
     "tsup": "^8.5.1",
-    "typescript": "^6.0.3"
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.10"
   },
   "config": {
     "commitizen": {
       "path": "cz-conventional-changelog"
     }
+  },
+  "engines": {
+    "node": ">=20"
   }
 }

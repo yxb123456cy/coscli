@@ -10,11 +10,11 @@
 
 ## Phase 1：项目骨架与 CLI 基础
 
-- [ ] 初始化 Node.js 20+、TypeScript、Commander、tsup 和 Vitest。
-- [ ] 创建 `bin/coscli.ts` 和顶层 CLI 入口。
-- [ ] 实现 `--help`、`--version`、全局选项和顶层异常处理。
-- [ ] 实现统一退出码、错误分类和 stdout/stderr 分流。
-- [ ] 实现 `--json`、`--quiet`、`--verbose` 和 `--debug` 输出模式。
+- [x] 初始化 Node.js 20+、TypeScript、Commander、tsup 和 Vitest。
+- [x] 创建 `bin/coscli.ts` 和顶层 CLI 入口。
+- [x] 实现 `--help`、`--version`、全局选项和顶层异常处理。
+- [x] 实现统一退出码、错误分类和 stdout/stderr 分流。
+- [x] 实现 `--json`、`--quiet`、`--verbose` 和 `--debug` 输出模式。
 
 ## Phase 2：配置与凭证
 
