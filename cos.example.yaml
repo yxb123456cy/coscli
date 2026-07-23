@@ -1,0 +1,22 @@
+cos:
+  base:
+    secretid: XXXXXXXXXXXXXXX
+    secretkey: XXXXXXXXXXXXXXXXX
+    sessiontoken: ""
+    protocol: https
+  buckets:
+    - name: examplebucket1-1250000000
+      alias: bucket1
+      region: ap-shanghai
+      endpoint: cos.ap-shanghai.myqcloud.com
+      ofs: false
+    - name: examplebucket2-1250000000
+      alias: bucket2
+      region: ap-guangzhou
+      endpoint: cos.ap-guangzhou.myqcloud.com
+      ofs: false
+    - name: examplebucket3-1250000000
+      alias: bucket3
+      region: ap-chengdu
+      endpoint: cos.ap-chengdu.myqcloud.com
+      ofs: false

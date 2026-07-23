@@ -1,6 +1,7 @@
 import { Command, CommanderError } from "commander";
 import packageJson from "../package.json";
 import process from "node:process";
+import { createConfigCommand } from "./commands/config";
 import { CliError, toCliError } from "./errors/cli-error";
 import { CliOutput, type OutputOptions } from "./output/output";
 
@@ -56,6 +57,7 @@ export async function runCli(argv: string[] = process.argv): Promise<number> {
     debug: argv.includes("--debug"),
   };
   const output = new CliOutput(outputOptions);
+  program.addCommand(createConfigCommand(output));
 
   try {
     program.exitOverride();

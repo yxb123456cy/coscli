@@ -18,12 +18,12 @@
 
 ## Phase 2：配置与凭证
 
-- [ ] 实现 `~/.cos.yaml` 默认读取。
-- [ ] 实现 `-c`/`--config` 自定义配置路径。
-- [ ] 实现 `config init`、读取、修改、校验和安全展示。
-- [ ] 实现命令行、环境变量、配置文件的优先级合并。
-- [ ] 支持 SecretId、SecretKey、SessionToken、Region、Bucket 和 Endpoint。
-- [ ] 确保配置写入和错误输出不泄露 Secret。
+- [x] 实现 `~/.cos.yaml` 默认读取。
+- [x] 实现 `-c`/`--config` 自定义配置路径。
+- [x] 实现 `config init`、读取、修改、校验和安全展示。
+- [x] 实现命令行、环境变量、配置文件的优先级合并：命令行 > 环境变量 > 配置文件。
+- [x] 支持 SecretId、SecretKey、SessionToken、Region、Bucket 和 Endpoint，并支持 profile 配置。
+- [x] 确保配置写入使用受限权限，配置展示默认脱敏，错误输出不包含 Secret。
 
 ## Phase 3：路径与 COS Client
 
