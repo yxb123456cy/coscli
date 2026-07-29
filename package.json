@@ -79,7 +79,7 @@
     "@tsconfig/node20": "^20.1.9",
     "@types/commander": "^2.12.5",
     "@types/jest": "^30.0.0",
-    "@types/node": "^26.1.1",
+    "@types/node": "^26.1.2",
     "@types/prompts": "^2.4.9",
     "@types/signale": "^1.4.7",
     "@types/yargs": "^17.0.35",
